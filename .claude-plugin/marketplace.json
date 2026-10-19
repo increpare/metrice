@@ -1,0 +1,16 @@
+{
+  "name": "increpare-metrice",
+  "description": "Compose and revise Latin verse with lexical evidence, aligned scansion, and rhetorical feedback citing exact passages from Winbolt, Lupton, and Postgate.",
+  "owner": {
+    "name": "Stephen Lavelle (increpare)",
+    "email": "analytic@gmail.com",
+    "url": "https://www.increpare.com"
+  },
+  "plugins": [
+    {
+      "name": "metrice",
+      "source": "./",
+      "description": "Compose and revise Latin verse with lexical evidence, aligned scansion, and rhetorical feedback citing exact passages from Winbolt, Lupton, and Postgate."
+    }
+  ]
+}

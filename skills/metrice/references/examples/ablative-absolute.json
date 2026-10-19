@@ -1,0 +1,112 @@
+{
+  "text": "Aut ibi flava seres, mutato sidere, farra.",
+  "meterId": "hexameter",
+  "maxFindings": 50,
+  "annotations": {
+    "version": 1,
+    "textHash": "2da1af99db269f6ef83b8af99a52b2751cb818688296724001e979310644c55a",
+    "providedBy": "agent",
+    "tokens": [
+      {
+        "tokenId": 0,
+        "surface": "Aut",
+        "partOfSpeech": "conjunction"
+      },
+      {
+        "tokenId": 1,
+        "surface": "ibi",
+        "partOfSpeech": "adverb"
+      },
+      {
+        "tokenId": 2,
+        "surface": "flava",
+        "partOfSpeech": "adjective",
+        "case": "accusative",
+        "number": "plural",
+        "gender": "neuter"
+      },
+      {
+        "tokenId": 3,
+        "surface": "seres",
+        "partOfSpeech": "verb",
+        "person": "second",
+        "number": "singular",
+        "tense": "future",
+        "mood": "indicative",
+        "voice": "active"
+      },
+      {
+        "tokenId": 4,
+        "surface": "mutato",
+        "partOfSpeech": "verb",
+        "case": "ablative",
+        "number": "singular",
+        "gender": "neuter",
+        "tense": "perfect",
+        "mood": "participle",
+        "voice": "passive"
+      },
+      {
+        "tokenId": 5,
+        "surface": "sidere",
+        "partOfSpeech": "noun",
+        "case": "ablative",
+        "number": "singular",
+        "gender": "neuter"
+      },
+      {
+        "tokenId": 6,
+        "surface": "farra",
+        "partOfSpeech": "noun",
+        "case": "accusative",
+        "number": "plural",
+        "gender": "neuter"
+      }
+    ],
+    "nounPhrases": [
+      {
+        "id": "corn",
+        "head": 6,
+        "modifiers": [
+          2
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "object",
+        "dependent": 6,
+        "head": 3
+      }
+    ],
+    "clauses": [
+      {
+        "id": "main",
+        "tokens": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "head": 3,
+        "kind": "main"
+      }
+    ],
+    "coordinationGroups": [],
+    "ablativeAbsolutes": [
+      {
+        "id": "changed-season",
+        "tokens": [
+          4,
+          5
+        ],
+        "subject": 5,
+        "predicate": 4
+      }
+    ],
+    "parentheses": []
+  }
+}

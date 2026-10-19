@@ -1,0 +1,11 @@
+interface:
+  display_name: "Metrice"
+  short_description: "Compose and check Latin verse with source evidence"
+  default_prompt: "Use $metrice to help me compose and revise Latin verse."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "metrice"
+      description: "Metrice scansion and lexical prosody server"
+      transport: "streamable_http"
+      url: "https://metrice.increpare.com/mcp"

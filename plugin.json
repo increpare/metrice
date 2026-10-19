@@ -1,0 +1,109 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "metrice",
+  "version": "0.2.1",
+  "description": "Compose and revise Latin verse with lexical evidence, aligned scansion, and rhetorical feedback citing exact passages from Winbolt, Lupton, and Postgate.",
+  "author": {
+    "name": "Stephen Lavelle (increpare)",
+    "email": "analytic@gmail.com",
+    "url": "https://www.increpare.com"
+  },
+  "homepage": "https://metrice.increpare.com/agent/",
+  "repository": "https://github.com/increpare/metrice",
+  "license": "MIT",
+  "keywords": [
+    "latin",
+    "poetry",
+    "prosody",
+    "scansion",
+    "hexameter",
+    "composition",
+    "classics"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Metrice",
+        "shortDescription": "Compose and scan Latin verse",
+        "longDescription": "Compose, scan, and revise Latin verse with lexical evidence and readable aligned scansion. Look up quantities and morphology, search forms, compare alternatives, and review agent-supplied grammatical relationships for rhetorical arrangements. Findings cite exact pages and passages from Winbolt, Lupton, and Postgate.\n\nThe public service uses Lewis & Short and Wiktionary. Unknown quantities, database gaps, and uncertain annotations remain visible. The agent supplies grammar and literary judgment: a fitting scan does not prove good Latin or good poetry. Calls send supplied text to the hosted service. Explicit issue reports are stored in the operator's private reference inbox and never update dictionaries automatically.",
+        "developerName": "Stephen Lavelle",
+        "category": "Education",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://metrice.increpare.com/agent/",
+        "supportURL": "https://metrice.increpare.com/agent/support.html",
+        "privacyPolicyURL": "https://metrice.increpare.com/agent/privacy.html",
+        "termsOfServiceURL": "https://metrice.increpare.com/agent/terms.html",
+        "defaultPrompt": [
+          "Scan arma virumque cano Troiae qui primus ab oris as hexameter.",
+          "Find ablative plural forms of insula with source evidence.",
+          "Review a Latin verse's rhetoric with exact Winbolt page citations."
+        ],
+        "brandColor": "#31556E",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      },
+      "review": {
+        "demo_recording_url": "https://metrice.increpare.com/agent/demo.html",
+        "commerce": false,
+        "commerce_description": "Free Latin composition tools. No purchases, payments, or transactions.",
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Scan a complete hexameter with aligned lexical and metrical rows.",
+              "prompt": "Use Metrice to scan arma virumque cano Troiae qui primus ab oris as hexameter and show its aligned display.",
+              "tools_triggered": "analyze_verse",
+              "expected_behavior": "Returns a first-ranked scan with status scan-found and an available aligned display; distinguishes lexical quantities from metrical positions and keeps public-resource warnings visible."
+            },
+            {
+              "description": "Find forms using jointly specified morphology and source-backed evidence.",
+              "prompt": "Find ablative plural forms of insula using Metrice and show their quantities and source records.",
+              "tools_triggered": "find_forms",
+              "expected_behavior": "Returns at least one supported ablative plural form, with morphology and source records. Describes the paradigm search as bounded, not exhaustive."
+            },
+            {
+              "description": "Recognize a grammatical insertion using explicit annotations and an exact handbook passage.",
+              "prompt": "Review Aut ibi flava seres, mutato sidere, farra. with Metrice. Supply the grammatical annotations, identify its rhetorical arrangement, and cite the exact Winbolt page and passage.",
+              "tools_triggered": "prepare_rhetoric, review_rhetoric, get_passage",
+              "expected_behavior": "Supplies an asserted noun phrase flava/farra and ablative absolute mutato/sidere, then identifies the intervening ablative absolute with winbolt_1903.P1623, printed page 218. Keeps lexical doubts and annotation dependence visible."
+            },
+            {
+              "description": "Compare labelled alternatives without silently replacing unresolved evidence.",
+              "prompt": "With Metrice, compare alternative a: arma virumque cano Troiae qui primus ab oris and alternative b: blorpt. Keep their labels and show any unresolved words.",
+              "tools_triggered": "check_alternatives",
+              "expected_behavior": "Preserves IDs a and b, returns a scan for a, and reports failure or unresolved evidence for b. Does not endorse an unknown word merely because a metrical reading could be forced."
+            },
+            {
+              "description": "Retrieve original source wording and exact locators.",
+              "prompt": "Use Metrice get_passage for winbolt_1903.P1628 and explain Winbolt's golden line with its exact printed page and passage.",
+              "tools_triggered": "get_passage",
+              "expected_behavior": "Returns the checked original wording about the golden line and printed page 219, with PDF/OCR locators. Does not invent a quotation or page."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Ordinary modern-language translation is outside the plugin's scope.",
+              "prompt": "Translate Good morning into French.",
+              "expected_behavior": "Answers normally without calling Metrice."
+            },
+            {
+              "description": "English poetry does not require Latin prosody tools.",
+              "prompt": "Write a short English haiku about rain.",
+              "expected_behavior": "Composes the English poem without calling Metrice or inventing a Latin scan."
+            },
+            {
+              "description": "Calendar actions are not feedback reports.",
+              "prompt": "Add a calendar event for lunch tomorrow at noon.",
+              "expected_behavior": "Does not call Metrice. It must not send the calendar request through report_feedback as a substitute for a calendar integration."
+            }
+          ]
+        }
+      },
+      "publication": {
+        "release_notes": "First public Metrice skill and hosted MCP bundle."
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "metrice",
+  "version": "0.2.1",
+  "description": "Compose and revise Latin verse with lexical evidence, aligned scansion, and rhetorical feedback citing exact passages from Winbolt, Lupton, and Postgate.",
+  "author": {
+    "name": "Stephen Lavelle (increpare)",
+    "email": "analytic@gmail.com",
+    "url": "https://www.increpare.com"
+  },
+  "homepage": "https://metrice.increpare.com/agent/",
+  "repository": "https://github.com/increpare/metrice",
+  "license": "MIT",
+  "keywords": [
+    "latin",
+    "poetry",
+    "prosody",
+    "scansion",
+    "hexameter",
+    "composition",
+    "classics"
+  ]
+}

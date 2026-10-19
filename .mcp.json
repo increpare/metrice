@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "metrice": {
+      "type": "http",
+      "url": "https://metrice.increpare.com/mcp"
+    }
+  }
+}

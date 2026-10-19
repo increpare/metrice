@@ -1,0 +1,236 @@
+{
+  "text": "Iussit et extendi campos, subsidere valles,\nFronde tegi silvas, lapidosos surgere montes",
+  "meterId": "hexameter",
+  "maxFindings": 50,
+  "annotations": {
+    "version": 1,
+    "textHash": "64897eefb94818ce02d37a2ed056d28515b814b617465ec35c2fa55bfece5b0e",
+    "providedBy": "agent",
+    "tokens": [
+      {
+        "tokenId": 0,
+        "surface": "Iussit",
+        "partOfSpeech": "verb",
+        "mood": "indicative",
+        "tense": "perfect",
+        "person": "third",
+        "number": "singular",
+        "voice": "active"
+      },
+      {
+        "tokenId": 1,
+        "surface": "et",
+        "partOfSpeech": "conjunction"
+      },
+      {
+        "tokenId": 2,
+        "surface": "extendi",
+        "partOfSpeech": "verb",
+        "mood": "infinitive"
+      },
+      {
+        "tokenId": 3,
+        "surface": "campos",
+        "partOfSpeech": "noun",
+        "case": "accusative",
+        "number": "plural",
+        "gender": "masculine"
+      },
+      {
+        "tokenId": 4,
+        "surface": "subsidere",
+        "partOfSpeech": "verb",
+        "mood": "infinitive"
+      },
+      {
+        "tokenId": 5,
+        "surface": "valles",
+        "partOfSpeech": "noun",
+        "case": "accusative",
+        "number": "plural",
+        "gender": "feminine"
+      },
+      {
+        "tokenId": 6,
+        "surface": "Fronde",
+        "partOfSpeech": "noun",
+        "case": "ablative",
+        "number": "singular",
+        "gender": "feminine"
+      },
+      {
+        "tokenId": 7,
+        "surface": "tegi",
+        "partOfSpeech": "verb",
+        "mood": "infinitive"
+      },
+      {
+        "tokenId": 8,
+        "surface": "silvas",
+        "partOfSpeech": "noun",
+        "case": "accusative",
+        "number": "plural",
+        "gender": "feminine"
+      },
+      {
+        "tokenId": 9,
+        "surface": "lapidosos",
+        "partOfSpeech": "adjective",
+        "case": "accusative",
+        "number": "plural",
+        "gender": "masculine"
+      },
+      {
+        "tokenId": 10,
+        "surface": "surgere",
+        "partOfSpeech": "verb",
+        "mood": "infinitive"
+      },
+      {
+        "tokenId": 11,
+        "surface": "montes",
+        "partOfSpeech": "noun",
+        "case": "accusative",
+        "number": "plural",
+        "gender": "masculine"
+      }
+    ],
+    "nounPhrases": [
+      {
+        "id": "mountains",
+        "head": 11,
+        "modifiers": [
+          9
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subject",
+        "head": 2,
+        "dependent": 3
+      },
+      {
+        "kind": "subject",
+        "head": 4,
+        "dependent": 5
+      },
+      {
+        "kind": "subject",
+        "head": 7,
+        "dependent": 8
+      },
+      {
+        "kind": "subject",
+        "head": 10,
+        "dependent": 11
+      }
+    ],
+    "clauses": [
+      {
+        "id": "main",
+        "tokens": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "head": 0,
+        "kind": "main"
+      },
+      {
+        "id": "clause-0",
+        "tokens": [
+          2,
+          3
+        ],
+        "head": 2,
+        "kind": "subordinate",
+        "parentId": "main"
+      },
+      {
+        "id": "clause-1",
+        "tokens": [
+          4,
+          5
+        ],
+        "head": 4,
+        "kind": "subordinate",
+        "parentId": "main"
+      },
+      {
+        "id": "clause-2",
+        "tokens": [
+          6,
+          7,
+          8
+        ],
+        "head": 7,
+        "kind": "subordinate",
+        "parentId": "main"
+      },
+      {
+        "id": "clause-3",
+        "tokens": [
+          9,
+          10,
+          11
+        ],
+        "head": 10,
+        "kind": "subordinate",
+        "parentId": "main"
+      }
+    ],
+    "coordinationGroups": [
+      {
+        "id": "four-commands",
+        "members": [
+          {
+            "tokens": [
+              2,
+              3
+            ],
+            "clauseId": "clause-0"
+          },
+          {
+            "tokens": [
+              4,
+              5
+            ],
+            "clauseId": "clause-1"
+          },
+          {
+            "tokens": [
+              6,
+              7,
+              8
+            ],
+            "clauseId": "clause-2"
+          },
+          {
+            "tokens": [
+              9,
+              10,
+              11
+            ],
+            "clauseId": "clause-3"
+          }
+        ],
+        "conjunctions": [
+          1
+        ],
+        "conjunctionsComplete": true
+      }
+    ],
+    "ablativeAbsolutes": [],
+    "parentheses": []
+  }
+}
