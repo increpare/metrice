@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "metrice",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Compose and revise Latin verse with lexical evidence, aligned scansion, and rhetorical feedback citing exact passages from Winbolt, Lupton, and Postgate.",
   "author": {
     "name": "Stephen Lavelle (increpare)",
@@ -27,7 +27,7 @@
         "shortDescription": "Compose and scan Latin verse",
         "longDescription": "Compose, scan, and revise Latin verse with lexical evidence and readable aligned scansion. Look up quantities and morphology, search forms, compare alternatives, and review agent-supplied grammatical relationships for rhetorical arrangements. Findings cite exact pages and passages from Winbolt, Lupton, and Postgate.\n\nThe public service uses Lewis & Short and Wiktionary. Unknown quantities, database gaps, and uncertain annotations remain visible. The agent supplies grammar and literary judgment: a fitting scan does not prove good Latin or good poetry. Calls send supplied text to the hosted service. Explicit issue reports are stored in the operator's private reference inbox and never update dictionaries automatically.",
         "developerName": "Stephen Lavelle",
-        "category": "Education",
+        "category": "Productivity",
         "capabilities": [
           "Read",
           "Write"
