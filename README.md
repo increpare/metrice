@@ -79,6 +79,14 @@ LASLA usage ranking, or the local corpus-trained ranker. Its evidence can differ
 from a fuller local installation. The service may ask clients to retry after rate
 or capacity limits.
 
+[Gaffiot.org](https://gaffiot.org/) is an external reference. Any permitted brief
+quotation must identify Gaffiot and the headword, credit the digital edition's
+editors, and link to the verified entry (or the homepage with the exact headword).
+Its [source and credits page](https://gaffiot.org/license) names Gérard Gréco,
+Mark De Wilde, Bernard Maréchal, and Katsuhiko Ôkubo and states CC BY-NC-ND 4.0.
+The service and bundle exclude its raw and derived dictionary data. Independently
+consulted Gaffiot evidence is labelled external to the hosted engine.
+
 ## License and support
 
 This plugin's instructions, helper, and bundled assets are MIT licensed; see

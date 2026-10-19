@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "metrice",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Compose and revise Latin verse with lexical evidence, aligned scansion, and rhetorical feedback citing exact passages from Winbolt, Lupton, and Postgate.",
   "author": {
     "name": "Stephen Lavelle (increpare)",
